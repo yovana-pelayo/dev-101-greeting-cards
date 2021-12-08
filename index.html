@@ -8,13 +8,51 @@
     <!-- import css: -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/global.css">
-    <title>Your App</title>
+    <title>Your Greeting Card</title>
 </head>
 
 <body>
-    Implement you app here, <a href="demo.html">See the demo</a>
+    <h1>Greeting Card Builder</h1>
+
+    <div id="container">
+        <section id="inputs">
+            <label for="title-input">Title</label>
+            <input id="title-input" value="One of a Kind ">
+
+            <label for="photo-select">Photo</label>
+            <select id="photo-select">
+                <option value= "assets/trees.png" selected >Trees</option>
+                <option value= "assets/joy.png">Joy</option>
+                <option value= "assets/color.png">Color</option>
+                <option value= "assets/nightsky.png">NightSky</option>
+            </select>
 
 
+
+            <label for="sentence-textarea">Sentence</label>
+            <textarea id="sentence-textarea>">
+                Live in each season as it passes; breathe the air, drink the drink, taste the fruit, and resign yourself to the influence of the earth. —Henry David Thoreau
+
+            <label for="theme-select">Theme</label>
+            <select id="theme-select">
+                <option value="calm" selected>Calm</option>
+                <option value="happy">Happy</option>
+                <option value="vibrant">vibrant</option>
+                <option value="midnight">Midnight</option>
+            </select>
+       
+            <button id="enter-button">Enter</button>
+        </section>
+
+             <article id="mood" class="calm">
+                <h2 id="title-header">One of a kind</h2>
+                <img id="photo-image" scr="assets/trees.png">
+                <p id="sentence-display"> 
+                    Live in each season as it passes; breathe the air, drink the drink, taste the fruit, and resign yourself to the influence of the earth. —Henry David Thoreau
+
+                </p>
+            </article> 
+        </div>
 
 
     <script src="app.js" type="module"></script>
