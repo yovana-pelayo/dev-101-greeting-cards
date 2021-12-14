@@ -1,9 +1,9 @@
 // Title
 const nameInput = document.getElementById('name-input');
 const nameHeader = document.getElementById('name-header');
-nameInput.addEventListener('input', () => {
-    nameHeader.textContent = nameInput.value;
-});
+nameInput.addEventListener('input', function () {
+        nameHeader.textContent = nameInput.value;
+    });
 
 // photo
 const avatarSelect = document.getElementById('avatar-select');
@@ -16,8 +16,8 @@ avatarSelect.addEventListener('change', () => {
 const descriptionTextarea = document.getElementById('description-textarea');
 const descriptionDisplay = document.getElementById('description-display');
 descriptionTextarea.addEventListener('input', () => {
-   descriptionDisplay.textContent = descriptionTextarea.value;
-});
+        descriptionDisplay.textContent = descriptionTextarea.value;
+    });
 
 //Theme
 //1. name of event (string)

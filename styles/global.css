@@ -18,7 +18,12 @@ body {
   justify-items: center;
 }
 
-@media (min-width: 300px) {
+img {
+max-width: 100%;
+height: auto;
+}
+
+@media (min-width: 260px) {
   #container {
     grid-template-columns: 50% 50%;
     align-items: center;
@@ -67,7 +72,7 @@ label {
   background: #9ad5ec;
   color: #1e5018;
   border: 3px solid #e2ecb5;
-  font-family: 'Gwendolyn';
+  font-family: 'Arial';
   font-size: 1.4rem;
 }
 
@@ -75,20 +80,20 @@ label {
   background: #f3f734;
   color: #2e2826;
   border: 3px solid #58ca3b;
-  font-family: 'Gwendolyn';
+  font-family: 'Arial';
   font-size: 1.0rem;
 }
 .vibrant {
   background: #e72ba9;
   color: #58156d;
   border: 3px solid #f5f23e;
-  font-family: 'Gwendolyn';
+  font-family: 'Arial';
   font-size: 0.9rem;
 }
 .midnight {
   background: #111a70;
   color: #e5ee88;
   border: 3px solid #f3f04d;
-  font-family: 'Gwendolyn';
+  font-family: 'Arial';
   font-size: 0.9rem;
 }
