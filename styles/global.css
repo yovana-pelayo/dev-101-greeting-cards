@@ -1,6 +1,6 @@
 
 :root {
-  --background: #57a732e8;
+  --background: #246b03e8;
 }
 
 * {
@@ -18,7 +18,7 @@ body {
   justify-items: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 300px) {
   #container {
     grid-template-columns: 50% 50%;
     align-items: center;
@@ -30,7 +30,7 @@ body {
   max-width: 400px;
 }
 input, select {
- height: 30px;
+ height: 40px;
  font-size: 1rem;
 }
 label, input, select, textarea {
@@ -54,6 +54,7 @@ label {
   padding: 20px;
   text-align: center;
 }
+
 #mood h2 {
   margin: 0 0 20px 0;
   font-size: 1.75em;
@@ -63,31 +64,31 @@ label {
   font-size: .9em;
 }
 .calm {
-  background: #CFB590;
-  color: #49281F;
-  border: 3px solid #758918;
+  background: #9ad5ec;
+  color: #1e5018;
+  border: 3px solid #e2ecb5;
   font-family: 'Gwendolyn';
   font-size: 1.4rem;
 }
 
 .happy {
-  background: #CFB590;
-  color: #49281F;
-  border: 3px solid #758918;
+  background: #f3f734;
+  color: #2e2826;
+  border: 3px solid #58ca3b;
   font-family: 'Gwendolyn';
   font-size: 1.0rem;
 }
 .vibrant {
-  background: #CFB590;
-  color: #49281F;
-  border: 3px solid #758918;
+  background: #e72ba9;
+  color: #58156d;
+  border: 3px solid #f5f23e;
   font-family: 'Gwendolyn';
   font-size: 0.9rem;
 }
 .midnight {
-  background: #CFB590;
-  color: #49281F;
-  border: 3px solid #758918;
+  background: #111a70;
+  color: #e5ee88;
+  border: 3px solid #f3f04d;
   font-family: 'Gwendolyn';
   font-size: 0.9rem;
 }

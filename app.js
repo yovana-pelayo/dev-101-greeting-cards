@@ -8,15 +8,15 @@ nameInput.addEventListener('input', () => {
 // photo
 const avatarSelect = document.getElementById('avatar-select');
 const avatarImage = document.getElementById('avatar-image');
-photoSelect.addEventListener('change', () => {
+avatarSelect.addEventListener('change', () => {
     avatarImage.src = avatarSelect.value;
-});s
+});
 
 //Sentence 
 const descriptionTextarea = document.getElementById('description-textarea');
 const descriptionDisplay = document.getElementById('description-display');
 descriptionTextarea.addEventListener('input', () => {
-descriptionDisplay.textContent = descriptionTextarea.value;
+   descriptionDisplay.textContent = descriptionTextarea.value;
 });
 
 //Theme
