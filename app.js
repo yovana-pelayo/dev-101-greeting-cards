@@ -1,39 +1,40 @@
 // Title
-const titleInput = document.getElementById('title-input');
-const TitleHeader = document.getElementById('title-header');
+const nameInput = document.getElementById('name-input');
+const nameHeader = document.getElementById('name-header');
 nameInput.addEventListener('input', () => {
-    TitleHeader.textContent = titleInput.value;
+    nameHeader.textContent = nameInput.value;
 });
 
 // photo
-const photoSelect = document.getElementById('photo-select');
-const photoImage = document.getElementById('photo-image');
+const avatarSelect = document.getElementById('avatar-select');
+const avatarImage = document.getElementById('avatar-image');
 photoSelect.addEventListener('change', () => {
-    photoImage.textContent = photoSelect.value;
-});
+    avatarImage.src = avatarSelect.value;
+});s
 
 //Sentence 
-const sentenceTextarea = document.getElementById('sentence-textarea');
-const sentenceDisplay = document.getAnimations('sentence-display');
-sentenceTextarea.addEventListener('input', () => {
-sentenceDisplay.textContent = sentenceTextarea.value;
+const descriptionTextarea = document.getElementById('description-textarea');
+const descriptionDisplay = document.getElementById('description-display');
+descriptionTextarea.addEventListener('input', () => {
+descriptionDisplay.textContent = descriptionTextarea.value;
 });
 
 //Theme
 //1. name of event (string)
 // 2. function to "call us back" when event happens
-const themeSelect = document.getAnimations('theme-select');
-const mood = document.getAnimations('mood');
+const themeSelect = document.getElementById('theme-select');
+const mood = document.getElementById('mood');
 themeSelect.addEventListener('change', () => {
     mood.classList.value = '';
     mood.classList.add(themeSelect.value);
 });
 
 //Enter
-const enterButton = document.getAnimations('enter-button');
+const enterButton = document.getElementById('enter-button');
 enterButton.addEventListener('click', async () => {
     const dataUrl = await domtoimage.toPng(mood);
-    link.download = titleInput.value + 'png';
+    const link = document.createElement('b');
+    link.download = nameInput.value + '.png';
     link.href = dataUrl;
     link.click();
 });

@@ -1,6 +1,6 @@
 
 :root {
-  --background: #eebb2e6b;
+  --background: #57a732e8;
 }
 
 * {
@@ -10,7 +10,7 @@
 body {
   background: var(--background);
   padding: 20px;
-    
+  
 }
 
 #container {
@@ -29,28 +29,38 @@ body {
   width: 100%;
   max-width: 400px;
 }
-
-label, input, select textarea{
+input, select {
+ height: 30px;
+ font-size: 1rem;
+}
+label, input, select, textarea {
   display: block;
-  width: 75%;
-  margin-bottom:20px ;
+  width: 100%;
+  margin-bottom:10px ;
+}
+
+textarea {
+  resize: none;
+  height: 60px;
 }
 
 label {
   text-transform: uppercase;
   margin-bottom: 3px;
 }
+
 #mood {
   width: 250px;
   padding: 20px;
   text-align: center;
 }
 #mood h2 {
-  margin: 0%;
+  margin: 0 0 20px 0;
+  font-size: 1.75em;
 }
 #mood p {
   margin:20px 0 0 0;
-  font-size: medium
+  font-size: .9em;
 }
 .calm {
   background: #CFB590;
@@ -65,19 +75,19 @@ label {
   color: #49281F;
   border: 3px solid #758918;
   font-family: 'Gwendolyn';
-  font-size: 1.4rem;
+  font-size: 1.0rem;
 }
 .vibrant {
   background: #CFB590;
   color: #49281F;
   border: 3px solid #758918;
   font-family: 'Gwendolyn';
-  font-size: 1.4rem;
+  font-size: 0.9rem;
 }
-.midnight{
+.midnight {
   background: #CFB590;
   color: #49281F;
   border: 3px solid #758918;
   font-family: 'Gwendolyn';
-  font-size: 1.4rem;
+  font-size: 0.9rem;
 }

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- import css: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" >
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Gwendolyn&family=Lato:ital,wght@1,300;1,400&family=Space+Grotesk:wght@300;400&display=swap" rel="stylesheet" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/global.css">
     <title>Your Greeting Card</title>
@@ -16,23 +20,21 @@
 
     <div id="container">
         <section id="inputs">
-            <label for="title-input">Title</label>
-            <input id="title-input" value="One of a Kind ">
+            <label for="name-input">Title</label>
+            <input id="name-input" value="One of a Kind ">
 
-            <label for="photo-select">Photo</label>
-            <select id="photo-select">
+            <label for="avatar-select">Photo</label>
+            <select id="avatar-select">
                 <option value= "assets/trees.png" selected >Trees</option>
                 <option value= "assets/joy.png">Joy</option>
                 <option value= "assets/color.png">Color</option>
                 <option value= "assets/nightsky.png">NightSky</option>
             </select>
 
-
-
-            <label for="sentence-textarea">Sentence</label>
-            <textarea id="sentence-textarea>">
+            <label for="description-textarea">Sentence</label>
+            <textarea id="Description-textarea>">
                 Live in each season as it passes; breathe the air, drink the drink, taste the fruit, and resign yourself to the influence of the earth. —Henry David Thoreau
-
+s
             <label for="theme-select">Theme</label>
             <select id="theme-select">
                 <option value="calm" selected>Calm</option>
@@ -45,16 +47,15 @@
         </section>
 
              <article id="mood" class="calm">
-                <h2 id="title-header">One of a kind</h2>
-                <img id="photo-image" scr="assets/trees.png">
+                <h2 id="name-header">One of a kind</h2>
+                <img id="avatar-image" scr="assets/trees.png">
                 <p id="sentence-display"> 
                     Live in each season as it passes; breathe the air, drink the drink, taste the fruit, and resign yourself to the influence of the earth. —Henry David Thoreau
-
                 </p>
             </article> 
         </div>
-
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/dom-to-image@2.6.0/src/dom-to-image.min.js"></script>
     <script src="app.js" type="module"></script>
 </body>
 
