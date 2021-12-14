@@ -80,20 +80,20 @@ label {
   background: #f3f734;
   color: #2e2826;
   border: 3px solid #58ca3b;
-  font-family: 'Arial';
+  font-family: 'fantasy';
   font-size: 1.0rem;
 }
 .vibrant {
   background: #e72ba9;
   color: #58156d;
   border: 3px solid #f5f23e;
-  font-family: 'Arial';
+  font-family: 'serif';
   font-size: 0.9rem;
 }
 .midnight {
   background: #111a70;
   color: #e5ee88;
   border: 3px solid #f3f04d;
-  font-family: 'Arial';
+  font-family: 'lato';
   font-size: 0.9rem;
 }

@@ -25,9 +25,9 @@ descriptionTextarea.addEventListener('input', () => {
 const themeSelect = document.getElementById('theme-select');
 const mood = document.getElementById('mood');
 themeSelect.addEventListener('change', () => {
-    mood.classList.value = '';
-    mood.classList.add(themeSelect.value);
-});
+        mood.classList.value = '';
+        mood.classList.add(themeSelect.value);
+    });
 
 //Enter
 const enterButton = document.getElementById('enter-button');
